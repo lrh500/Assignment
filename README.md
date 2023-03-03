@@ -47,6 +47,10 @@ export FLASK_APP=Framework.py
 export FLASK_ENV=development
 python3 –m flask run –host 0.0.0.0 # if the server works on codio
 
+#How to test
+The document enviornment.py in root directory could run directly for testing the enviornment.
+The document rating.py in steps folders where in features folders could through run *behave* in terminal to test the rating_details page.
+
 #How to use
 The home page has 2 links, which links to movies page and ratings page, the ratings page shows all ratings from users. If you want to see the rating of one of movies, click into movies page, then click the movie id that you want to see, which could show all the rating from different users for same movie.
 
