@@ -1,0 +1,13 @@
+* 584a218 : update
+* 058f2ec : change the style
+* 59232fa : change the style of html
+* 600eb77 : change the style of html
+* 9abb7d2 : change the style of index.html
+* 09c7156 : add new items in requeirments
+* 0a17fa6 : upgrade requirements
+* c71f4c3 : upgrade the requirements
+* 34e38ed : add flask in requirement
+* 0f7867c : add gunicorn in requierment
+* 1c01fd1 : requirement
+* 96e746d : the first import to the github
+* ec130d2 : Initial commit
