@@ -1,12 +1,48 @@
 
 <html>
-<head>
-  <title>Movies</title>
-</head>
-<body>
-    <h1>This webpage shows the movies and the ratings of them</h1>
- 
-<p>Here is the URL link to the <b> <a href={{ url_for('movies') }}>Movie</a></b> </p>
-<p>Here is the URL link to the <b> <a href={{ url_for('ratings') }}>Ratings</a></b> </p>
-</body>
+  <head>
+    <title>Movies</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  h1 {
+    color: #333;
+    font-size: 28px;
+    margin: 20px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  b {
+    font-weight: bold;
+  }
+</style>
+  </head>
+  <body>
+    <h1>Movies and Ratings</h1>
+    <p>Here is the URL link to <b><a href="{{ url_for('movies') }}">Movies</a></b></p>
+    <p>Here is the URL link to <b><a href="{{ url_for('ratings') }}">Ratings</a></b></p>
+  </body>
 </html>
