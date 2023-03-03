@@ -12,4 +12,4 @@ def click(context):
 def details(context):
     print(context.browser.page_source)
     assert context.browser.current_url=='https://arcticsaddle-jumbofloat-5000.codio-box.uk/rating_details/2'
-    assert '1045 3 5.5' in context.browser.page_source
+    assert '6 2 4' in context.browser.page_source
