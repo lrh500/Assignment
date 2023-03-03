@@ -1,6 +1,33 @@
 <html>
 <head>
   <title>Ratings</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin: 20px 0;
+      text-align: center;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
  
@@ -8,13 +35,9 @@
     
     {% for row in rows %}
     <p>
-         
-          <strong>Userid:</strong> {{row["userid"]}} | 
-          <strong>Movieid:</strong>{{ row["movieid"]}} | 
-          <strong>Rating:</strong>{{ row["rating"]}}
-
-
-
+      <strong>User ID:</strong> {{row["userid"]}} | 
+      <strong>Movie ID:</strong> {{row["movieid"]}} | 
+      <strong>Rating:</strong> {{row["rating"]}}
     </p>
     {% endfor %}
  

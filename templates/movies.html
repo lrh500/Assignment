@@ -1,17 +1,52 @@
 <html>
-<head>
-  <title>Movies</title>
-</head>
-<body>
- 
+  <head>
+    <title>Movies</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  h1 {
+    color: #333;
+    font-size: 28px;
+    margin: 20px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  b {
+    font-weight: bold;
+  }
+</style>
+  </head>
+  <body>
     <h1>Movies</h1>
-    
     {% for row in rows %}
     <p>Movies: 
-       <b> <a href={{ url_for('ratings_details', id= row['id']) }}>{{row["id"]}}</a></b> | 
-          {{row["title"]}} | 
-          {{ row["genre"]}} | 
+       <b><a href="{{ url_for('ratings_details', id=row['id']) }}">{{ row['id'] }}</a></b> | 
+       <span style="font-weight: bold">{{ row['title'] }}</span> | 
+       <span style="color: gray">{{ row['genre'] }}</span>
     </p>
     {% endfor %}
-</body>
+  </body>
 </html>

@@ -1,18 +1,43 @@
 
 <html>
 <head>
-  <title>Rating details</title>
+  <title>Rating Details</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin: 20px 0;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+  text-align: center;
+}
+
+strong {
+  font-weight: bold;
+}
+  </style>
 </head>
 <body>
- 
-    <h1>Rating Details</h1>
+  <h1>Rating Details</h1>
+{% for row in ratings %}
 
-    {% for row in ratings %}
-    <p>  
-       <strong>Userid:</strong>{{row["userid"]}} 
-       <strong>Movieid:</strong>{{row["movieid"]}}
-       <strong>Rating:</strong>{{row["rating"]}}	
-    </p>
-    {% endfor %}
+  <p>  
+     <strong>User ID:</strong> {{row["userid"]}} | 
+     <strong>Movie ID:</strong> {{row["movieid"]}} | 
+     <strong>Rating:</strong> {{row["rating"]}}
+  </p>
+  {% endfor %}
 </body>
 </html>
