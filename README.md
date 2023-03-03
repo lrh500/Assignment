@@ -2,6 +2,7 @@
 #The description of this application
 This application is a Flask web application that uses the Jinja2 template engine work on Render, a cloud hosting service, which shows the movies and the ratings from users.
 The URL of render:https://assignment-apx5.onrender.com
+The URL of this application on GitHub : https://github.com/lrh500/assignment
 
 #Prerequisites
 
