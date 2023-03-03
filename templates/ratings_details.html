@@ -1,0 +1,18 @@
+
+<html>
+<head>
+  <title>Rating details</title>
+</head>
+<body>
+ 
+    <h1>Rating Details</h1>
+
+    {% for row in ratings %}
+    <p>  
+       <strong>Userid:</strong>{{row["userid"]}} 
+       <strong>Movieid:</strong>{{row["movieid"]}}
+       <strong>Rating:</strong>{{row["rating"]}}	
+    </p>
+    {% endfor %}
+</body>
+</html>

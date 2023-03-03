@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Movies</title>
+</head>
+<body>
+ 
+    <h1>Movies</h1>
+    
+    {% for row in rows %}
+    <p>Movies: 
+       <b> <a href={{ url_for('ratings_details', id= row['id']) }}>{{row["id"]}}</a></b> | 
+          {{row["title"]}} | 
+          {{ row["genre"]}} | 
+    </p>
+    {% endfor %}
+</body>
+</html>

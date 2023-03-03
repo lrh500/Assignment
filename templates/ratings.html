@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Ratings</title>
+</head>
+<body>
+ 
+    <h1>Ratings</h1>
+    
+    {% for row in rows %}
+    <p>
+         
+          <strong>Userid:</strong> {{row["userid"]}} | 
+          <strong>Movieid:</strong>{{ row["movieid"]}} | 
+          <strong>Rating:</strong>{{ row["rating"]}}
+
+
+
+    </p>
+    {% endfor %}
+ 
+    <p>Details of line items in the order:</p>
+</body>
+</html>
